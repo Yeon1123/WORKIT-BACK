@@ -1,0 +1,45 @@
+# #common
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+spring:
+  profiles:
+    active: dev
+
+--- #dev
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/workit
+    username: postgres
+    password: 4512
+  web:
+    resources:
+      cache:
+        cachecontrol:
+          no-cache: true
+          max-age: 0
+  thymeleaf:
+    cache: false
+
+mybatis:
+  mapper-locations: mapper/**/*.xml
+  configuration:
+    call-setters-on-nulls: true
+
+logging:
+  level:
+    jdbc: 
+      sqlonly: debug
+      sqltiming: off
+      audit: off
+      resultset: off
+      resultsettable: off
+      connection: off     
+
+pagehelper:
+  helper-dialect: postgresql
+  reasonable: true
+  supportMethodsArguments: true
