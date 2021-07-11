@@ -17,6 +17,15 @@ public class CategoryService {
         return categoryMapper.getCateList();
     }
 
+    public void createCate(String CateName){
+    }
+
+    public void deleteCate(Integer Cateid, String CateName){
+    }
+
+    public void modifyCate(Integer Cateid){
+    }
+
 
 
 }

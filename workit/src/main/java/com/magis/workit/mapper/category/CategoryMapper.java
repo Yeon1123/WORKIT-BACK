@@ -7,5 +7,13 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface CategoryMapper {
-    List<CategoryDto> getCateList();
+
+    public List<CategoryDto> getCateList();
+
+    public void createCate(String CateName);
+
+    public void modifyCate(Integer Cateid, String CateName);
+
+    public void deleteCate(Integer Cateid);
+
 }

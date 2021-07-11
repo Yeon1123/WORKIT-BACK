@@ -9,4 +9,21 @@
         order by b.contentId desc
     </select>
 
+    <insert id="createBoard">
+        Insert into board 
+            (
+                cateId, 
+                title ,
+                content, 
+                writer
+            )
+        values 
+        (
+            #{cateID}, 
+            #{title},
+            #{content}',
+            #{writer}
+        )
+    </insert>
+
 </mapper>
