@@ -1,6 +1,5 @@
 package com.magis.workit.dto.board;
 
-import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

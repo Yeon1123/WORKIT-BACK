@@ -6,4 +6,20 @@
         from category
     </select>
 
+    <insert id="createCate">
+        Insert into category (cateName)
+        values #{cateName}
+    </insert>
+
+    <update id="modifyCate">
+        update category
+        set cateName = #{cateName}
+        where cateId = #{cateId}
+    </update>
+
+    <delete id="deleteCate">
+        delete from category
+        where cateid = #{cateId}
+    </delete>
+
 </mapper>

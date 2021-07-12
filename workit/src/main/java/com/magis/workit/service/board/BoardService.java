@@ -17,4 +17,8 @@ public class BoardService {
     public List<BoardDto> getBoardList (){
         return boardMapper.getBoardList ();
     }
+
+    public void createBoard(BoardDto boardDto){
+        boardMapper.createBoard(boardDto);
+    }
 }

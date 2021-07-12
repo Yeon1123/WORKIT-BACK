@@ -2,10 +2,14 @@ package com.magis.workit.dto.category;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 
+
+
+@Getter
 @Data
 @AllArgsConstructor
 public class CategoryDto {
-    private Integer cateId;
-    private String cateName;
+    public Integer cateId;
+    public String cateName;
 }
